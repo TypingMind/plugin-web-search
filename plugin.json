@@ -1,0 +1,36 @@
+{
+  "uuid": "51bb73c9-9a33-46f0-ba3e-07094b5a3d95",
+  "id": "get_web_search_results",
+  "system": true,
+  "emoji": "🔍",
+  "title": "Web Search",
+  "userSettings": [
+    {
+      "name": "searchEngineID",
+      "label": "Search Engine ID",
+      "required": true
+    },
+    {
+      "name": "searchEngineAPIKey",
+      "label": "Search Engine API Key",
+      "type": "password",
+      "required": true
+    }
+  ],
+  "openaiSpec": {
+    "name": "get_web_search_results",
+    "description": "Search for information from the internet in real-time using Google Search.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "keyword": {
+          "type": "string",
+          "description": "The search keyword"
+        }
+      },
+      "required": ["keyword"]
+    }
+  },
+  "implementationType": "javascript",
+  "outputType": "respond_to_ai"
+}
