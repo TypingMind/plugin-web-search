@@ -1,7 +1,6 @@
 {
   "uuid": "51bb73c9-9a33-46f0-ba3e-07094b5a3d95",
   "id": "get_web_search_results",
-  "system": true,
   "emoji": "🔍",
   "title": "Web Search",
   "userSettings": [
