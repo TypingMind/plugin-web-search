@@ -30,6 +30,17 @@
       "required": ["keyword"]
     }
   },
+  "httpAction": {
+    "id": "03544138-b83c-426f-b157-636e87907aae",
+    "method": "GET",
+    "name": "",
+    "url": "https://customsearch.googleapis.com/customsearch/v1?q={keyword}&cx={searchEngineID}&key={searchEngineAPIKey}",
+    "resultTransform": {
+      "engine": "jmes",
+      "expression": "items[*].{Title: title, Result: snippet, Link: link}"
+    },
+    "hasResultTransform": true
+  },
   "implementationType": "javascript",
   "outputType": "respond_to_ai"
 }
