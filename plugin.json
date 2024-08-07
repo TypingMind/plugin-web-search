@@ -19,7 +19,6 @@
   "openaiSpec": {
     "name": "get_web_search_results",
     "description": "Search for information from the internet in real-time using Google Search.",
-    "strict": true,
     "parameters": {
       "type": "object",
       "properties": {
