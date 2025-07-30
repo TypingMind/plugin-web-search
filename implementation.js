@@ -22,7 +22,7 @@ function get_web_search_results(params, userSettings) {
       const items = response.items;
 
       if (!items) {
-        throw new Error('No results found');
+        return 'No results found';
       }
       
       return items
