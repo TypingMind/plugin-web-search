@@ -16,6 +16,23 @@ function get_web_search_results(params, userSettings) {
   )
     .then((r) => r.json())
     .then((response) => {
-       return JSON.stringify(response);
+      if (response.error) {
+        throw new Error('Error: ' + response.error.message);
+      }
+      const items = response.items;
+
+      if (!items) {
+        throw new Error('No results found');
+      }
+      
+      return items
+        .map(
+          (item) => `
+Title: ${item.title}
+Result: ${item.snippet}
+URL: ${item.link}
+ `
+        )
+        .join('');
     });
 }
