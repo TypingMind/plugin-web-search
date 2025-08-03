@@ -18,13 +18,17 @@
   ],
   "openaiSpec": {
     "name": "get_web_search_results",
-    "description": "Search for information from the internet in real-time using Google Search.",
+    "description": "Search the web using Google search engine for real-time information about any topic. Use this tool when you need up-to-date information that might not be available in your training data, or when you need to verify current facts. The search results will include relevant snippets and URLs from web pages. This is particularly useful for questions about current events, technology updates, or any topic that requires recent information.",
     "parameters": {
       "type": "object",
       "properties": {
         "keyword": {
           "type": "string",
           "description": "The search keyword"
+        },
+        "explanation": {
+          "type": "string",
+          "description": "One sentence explanation as to why this tool is being used, and how it contributes to the goal."
         }
       },
       "required": ["keyword"]
