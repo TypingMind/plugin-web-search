@@ -3,7 +3,7 @@
   "id": "get_web_search_results",
   "emoji": "🔍",
   "iconURL": "https://raw.githubusercontent.com/TypingMind/plugin-web-search/refs/heads/main/google.webp",
-  "title": "Web Search",
+  "title": "Google Search",
   "userSettings": [
     {
       "name": "searchEngineID",
