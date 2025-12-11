@@ -2,6 +2,7 @@
   "uuid": "51bb73c9-9a33-46f0-ba3e-07094b5a3d95",
   "id": "get_web_search_results",
   "emoji": "🔍",
+  "iconURL": "https://raw.githubusercontent.com/TypingMind/plugin-web-search/refs/heads/main/google.webp",
   "title": "Web Search",
   "userSettings": [
     {
